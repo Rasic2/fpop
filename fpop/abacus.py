@@ -631,7 +631,7 @@ class RunAbacus(RunFp):
         else:
             command = "abacus"
         # run abacus
-        command = " ".join([command, ">", log_name])
+        # command = " ".join([command, ">", log_name])
         kwargs = {"try_bash": True, "shell": True}
         if run_image_config:
             kwargs.update(run_image_config)
